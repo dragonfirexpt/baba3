@@ -8698,9 +8698,6 @@ local script = G2L["c9"];
 		local number = math.floor(scale * 100)
 		local volume = number
 		local humanoid = Player.Character:FindFirstChild("Humanoid")
-		if humanoid then
-			humanoid.WalkSpeed = 16 + (1 * volume)
-		end
 	
 		-- Change the fill bar color
 		FillBar.BackgroundColor3 = Color3.fromRGB(121, 120, 234) -- Blue
@@ -9433,9 +9430,6 @@ local script = G2L["117"];
 		local number = math.floor(scale * 100)
 		local volume = number
 		local humanoid = Player.Character:FindFirstChild("Humanoid")
-		if humanoid then
-			humanoid.WalkSpeed = 16 + (1 * volume)
-		end
 	
 		-- Change the fill bar color
 		FillBar.BackgroundColor3 = Color3.fromRGB(121, 120, 234) -- Blue
@@ -10168,9 +10162,6 @@ local script = G2L["165"];
 		local number = math.floor(scale * 100)
 		local volume = number
 		local humanoid = Player.Character:FindFirstChild("Humanoid")
-		if humanoid then
-			humanoid.WalkSpeed = 16 + (1 * volume)
-		end
 	
 		-- Change the fill bar color
 		FillBar.BackgroundColor3 = Color3.fromRGB(121, 120, 234) -- Blue

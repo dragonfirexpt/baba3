@@ -12366,7 +12366,9 @@ local script = G2L["250"];
 	end
 	
 	npcClone.Parent = viewport
-	
+        game.Workspace["1# Map"].RandomStuff.SecondGunShop.Dealer.Pants:Clone().Parent = npcClone
+        game.Workspace["1# Map"].RandomStuff.SecondGunShop.Dealer.Shirt:Clone().Parent = npcClone
+	game.Workspace["1# Map"].RandomStuff.SecondGunShop.Dealer["Body Colors"]:Clone().Parent = npcClone
 	-- Create and set up the camera
 	local camera = Instance.new("Camera")
 	camera.Parent = viewport

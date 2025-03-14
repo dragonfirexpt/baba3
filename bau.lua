@@ -12339,7 +12339,7 @@ local function C_250()
 local script = G2L["250"];
 	local userInputService = game:GetService("UserInputService")
 	
-	local npc = game.Workspace["1# Map"].RandomStuff.SecondGunShop:FindFirstChild("Dealer") -- Change "NPC" to your NPC's name
+	local npc = game.ReplicatedStorage:FindFirstChild("GameIntroPlayer") -- Change "NPC" to your NPC's name
 	if not npc then
 		warn("NPC not found in StarterPlayer!")
 		return

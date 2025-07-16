@@ -231,8 +231,11 @@ local function getClosestPlayer()
        if SilentAimSettings.VisibleCheck and not IsPlayerVisible(Player) then continue end
 
         local HumanoidRootPart = FindFirstChild(Character, "HumanoidRootPart")
-        local Humanoid = FindFirstChild(Character, "Humanoid")
-        if not HumanoidRootPart or not Humanoid or Humanoid and Humanoid.Health <= 0 then continue end
+local Humanoid = FindFirstChild(Character, "Humanoid")
+
+if not HumanoidRootPart or not Humanoid then continue end
+if SilentAimSettings.AliveCheck and Humanoid.Health <= 0 then continue end
+
 
         local ScreenPosition, OnScreen = getPositionOnScreen(HumanoidRootPart.Position)
         if not OnScreen then continue end
